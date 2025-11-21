@@ -80,7 +80,6 @@ int main() {
     printf("- Vertical: D5, D6, D7\n");
 
     return 0;
-
 }
 
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
