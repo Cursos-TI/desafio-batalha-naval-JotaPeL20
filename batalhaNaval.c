@@ -5,6 +5,38 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+
+
+    //Criar o tabuleiro(Matriz 10x10)
+    int Tabuleiro [10][10];
+    int x = 0, y;
+
+    printf("****| INICIANDO BATALHA NAVAL... |****\n\n");
+    
+    //Iniciar tabuleiro com zeros
+    for (x = 0; x < 0; x++)
+    {   
+        y = 0;
+        while (y < 10)
+        {
+            Tabuleiro[x][y] = 0:
+            y++;
+        }
+        
+    }
+    
+    //Posicionar um navio na VERTICAL
+    x = 4;
+    while (x < 6) 
+    {
+        Tabuleiro[x][3] = 3; //Coluna H - Linhas 5,6,7 
+        x++;
+    }
+    
+    //Posicionar um navio na HORIZONTAL
+    
+    
+
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
