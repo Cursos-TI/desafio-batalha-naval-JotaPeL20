@@ -14,12 +14,12 @@ int main() {
     printf("****| INICIANDO BATALHA NAVAL... |****\n\n");
     
     //Iniciar tabuleiro com zeros
-    for (x = 0; x < 0; x++)
+    for (x = 0; x < 10; x++)
     {   
         y = 0;
         while (y < 10)
         {
-            Tabuleiro[x][y] = 0:
+            Tabuleiro[x][y] = 0;
             y++;
         }
         
@@ -27,7 +27,7 @@ int main() {
     
     //Posicionar um navio na VERTICAL
     x = 4;
-    while (x < 6) 
+    while (x < 7) 
     {
         Tabuleiro[x][3] = 3; //Coluna D - Linhas 5,6,7 
         x++;
@@ -35,16 +35,16 @@ int main() {
     
     //Posicionar um navio na HORIZONTAL
     y = 5;
-    while (x < 6)
+    while (y < 8)
     {
-        Tabuleiro[3]{y} = 3; //Linha 4 - Colunas G,H,I
+        Tabuleiro[3][y] = 3; //Linha 4 - Colunas G,H,I
         y++;    
     }
 
     printf("\n");
 
     //Mostrar tabuleiro com as coordenadas A-J e 1-10;
-    printf("****| TABULEIRO BATALHA NAVAL |****"\n\n");
+    printf(" ****| TABULEIRO BATALHA NAVAL |****\n\n");
 
     //Colunas com letras A-J
     printf("   ");
@@ -76,7 +76,7 @@ int main() {
     printf("Exemplo:: A1, B2, C3, ...,J10.\n\n");
 
     printf("Navios em suas posições\n");
-    printf("- Horizontal: G4, H4, I4\n");
+    printf("- Horizontal: F4, G4, H4\n");
     printf("- Vertical: D5, D6, D7\n");
 
     return 0;
