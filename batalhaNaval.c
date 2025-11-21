@@ -29,18 +29,59 @@ int main() {
     x = 4;
     while (x < 6) 
     {
-        Tabuleiro[x][3] = 3; //Coluna H - Linhas 5,6,7 
+        Tabuleiro[x][3] = 3; //Coluna D - Linhas 5,6,7 
         x++;
     }
     
     //Posicionar um navio na HORIZONTAL
-    
-    
+    y = 5;
+    while (x < 6)
+    {
+        Tabuleiro[3]{y} = 3; //Linha 4 - Colunas G,H,I
+        y++;    
+    }
 
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+    printf("\n");
+
+    //Mostrar tabuleiro com as coordenadas A-J e 1-10;
+    printf("****| TABULEIRO BATALHA NAVAL |****"\n\n");
+
+    //Colunas com letras A-J
+    printf("   ");
+    y = 0;
+    while (y <10)
+    {
+        printf(" %c ", 'A' + y); //A, B, C, D, ..., J
+        y++;
+    }
+
+    printf("\n");
+
+    //Linhas com números de 1-10;
+    for (x = 0; x < 10; x++)
+    {
+        printf(" %2d ", x + 1); //Números 1 a 10
+        y = 0;
+        while (y < 10)
+        {
+            printf(" %d ", Tabuleiro[x][y]);
+            y++;
+        }
+        printf("\n");
+    }
+
+    printf("\n****|LEGENDA|****\n");
+    printf("0 = Água | 3 = Navio\n");
+    printf("Coordenadas: Letra(Coluna) e Número(Linha)\n");
+    printf("Exemplo:: A1, B2, C3, ...,J10.\n\n");
+
+    printf("Navios em suas posições\n");
+    printf("- Horizontal: G4, H4, I4\n");
+    printf("- Vertical: D5, D6, D7\n");
+
+    return 0;
+
+}
 
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
@@ -67,6 +108,3 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
-
-    return 0;
-}
